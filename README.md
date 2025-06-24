@@ -61,7 +61,7 @@ O endpoint para obter a lista de com maior intervalo entre dois prêmios consecu
 prêmios mais rápido é:
 
 ```
-GET /produces/winners
+GET /producers/winners
 ```
 
 ## Executando com Docker
