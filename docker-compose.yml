@@ -1,0 +1,14 @@
+services:
+  winners-api:
+    build:
+      context: .
+      dockerfile: src/main/docker//Dockerfile.jvm
+    image: winners-api:latest
+    container_name: winners-api
+    environment:
+      - CSV_FILE_PATH=./data/movielist.csv
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/deployments/data
+
