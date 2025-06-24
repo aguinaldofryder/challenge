@@ -13,7 +13,7 @@ Com isso pude identificar que o projeto possui dois contextos principais:
 
 Com base nisso criei uma entidade para cada contexto.
 * Na entidade de Produtores, adicionei as regras de negócio necessárias para calcular o intervalo de tempo entre o primeiro e o último filme do produtor que foi o vencedor da indicação.
-  * Na entidade de Filmes, adicionei o básico para salvar os dados dos filmes e emitir um evento quando um filme vencedor for adicionado.
+* Na entidade de Filmes, adicionei o básico para salvar os dados dos filmes e emitir um evento quando um filme vencedor for adicionado.
   * Os eventos são utilizados para notificar outras partes do sistema sobre mudanças de estado, como a adição de um filme vencedor.
   * Essa abordagem possibilita a implementação de uma arquitetura orientada a eventos, onde diferentes partes do sistema podem reagir a eventos específicos sem acoplamento direto,
   possibilitando escalar o sistema de forma mais eficiente.
