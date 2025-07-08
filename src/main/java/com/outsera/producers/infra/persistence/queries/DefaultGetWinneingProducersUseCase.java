@@ -44,6 +44,6 @@ public class DefaultGetWinneingProducersUseCase extends GetWinneingProducersUseC
             .where(builder.isNotNull(root.get(ProducerJpaEntity_.interval)))
             .orderBy(orderBy.apply(builder, root));
 
-        return entityManager.createQuery(query).setMaxResults(2).getResultList();
+        return entityManager.createQuery(query).setMaxResults(1).getResultList();
     }
 }
